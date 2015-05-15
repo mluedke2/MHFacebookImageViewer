@@ -642,15 +642,6 @@ static const CGFloat kMinImageScale = 1.0f;
 
 #pragma mark - Custom Gesture Recognizer that will Handle imageURL
 
-@interface MHFacebookImageViewerTapGestureRecognizer : UITapGestureRecognizer
-@property(nonatomic,strong) NSURL * imageURL;
-@property(nonatomic,strong) MHFacebookImageViewerOpeningBlock openingBlock;
-@property(nonatomic,strong) MHFacebookImageViewerClosingBlock closingBlock;
-@property(nonatomic,weak) id<MHFacebookImageViewerDatasource> imageDatasource;
-@property(nonatomic,assign) NSInteger initialIndex;
-
-@end
-
 @implementation MHFacebookImageViewerTapGestureRecognizer
 @synthesize imageURL;
 @synthesize openingBlock;
